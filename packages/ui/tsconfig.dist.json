@@ -1,0 +1,13 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "allowImportingTsExtensions": false,
+    "declaration": true,
+    "declarationMap": false,
+    "outDir": "dist",
+    "rootDir": "src"
+  },
+  "include": ["src/shadcn/**/*.ts", "src/shadcn/**/*.tsx", "src/lib/**/*.ts", "src/hooks/**/*.ts"],
+  "exclude": ["src/components"]
+}

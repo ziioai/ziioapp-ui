@@ -1,0 +1,32 @@
+import { createHash } from 'node:crypto';
+import { cpSync, existsSync, mkdirSync, mkdtempSync, readFileSync, readdirSync, writeFileSync } from 'node:fs';
+import { tmpdir } from 'node:os';
+import { dirname, resolve, join } from 'node:path';
+import { fileURLToPath } from 'node:url';
+import { execFileSync } from 'node:child_process';
+const root=resolve(dirname(fileURLToPath(import.meta.url)),'..');
+const args=process.argv.slice(2);
+const option=name=>args[args.indexOf(name)+1];
+if(!args.includes('--archive')||!args.includes('--commit')||!args.includes('--cli-integrity'))throw new Error('Usage: prepare-upstream.mjs --archive <official tar.gz> --commit <40-char SHA> --cli-integrity <sha512-...>');
+const commit=option('--commit'),integrity=option('--cli-integrity');
+if(!/^[a-f0-9]{40}$/.test(commit)||!integrity.startsWith('sha512-'))throw new Error('An immutable commit and npm integrity are required');
+const archive=resolve(option('--archive'));
+const temp=mkdtempSync(join(tmpdir(),'ziio-upstream-'));
+const extracted=join(temp,'extracted');mkdirSync(extracted);
+execFileSync('tar',['-xzf',archive,'-C',extracted,'--strip-components=1']);
+const version=JSON.parse(readFileSync(join(extracted,'packages/shadcn/package.json'),'utf8')).version;
+if(version.includes('-'))throw new Error('Only stable upstream versions are supported');
+const candidate=join(temp,'upstream'),sources=join(candidate,'shadcn');mkdirSync(sources,{recursive:true});
+const selected=['LICENSE.md','apps/v4/registry/bases/base/ui','apps/v4/registry/bases/base/hooks','apps/v4/registry/themes.ts','apps/v4/registry/base-colors.ts','apps/v4/registry/styles','packages/shadcn/src/tailwind.css'];
+for(const path of selected){if(!existsSync(join(extracted,path)))throw new Error(`Upstream layout changed: ${path}`);mkdirSync(dirname(join(sources,path)),{recursive:true});cpSync(join(extracted,path),join(sources,path),{recursive:true});}
+const sha=data=>createHash('sha256').update(data).digest('hex');
+const files={};
+function walk(path=''){for(const entry of readdirSync(join(sources,path),{withFileTypes:true}).sort((a,b)=>a.name.localeCompare(b.name))){const next=path?`${path}/${entry.name}`:entry.name;if(entry.isDirectory())walk(next);else if(entry.isFile())files[next]=sha(readFileSync(join(sources,next)));else throw new Error(`Unsupported upstream entry: ${next}`);}}
+walk();
+const previous=JSON.parse(readFileSync(join(root,'upstream/lock.json'),'utf8'));
+const foundStyles=readdirSync(join(sources,'apps/v4/registry/styles')).filter(file=>/^style-.*\.css$/.test(file)).map(file=>file.slice(6,-4));
+const styles=[...previous.styles.filter(style=>foundStyles.includes(style)),...foundStyles.filter(style=>!previous.styles.includes(style))];
+const lock={...previous,tag:`shadcn@${version}`,commit,cliVersion:version,cliIntegrity:integrity,archiveSha256:sha(readFileSync(archive)),styles,files};
+writeFileSync(join(candidate,'lock.json'),JSON.stringify(lock,null,2)+'\n');
+for(const path of new Set([...Object.keys(previous.files),...Object.keys(files)]))if(previous.files[path]!==files[path])console.log(`${files[path] ? previous.files[path] ? 'modified' : 'added' : 'removed'} ${path}`);
+console.log(`Candidate only: ${candidate}\nInspect its lock and source diff, then use sync-upstream.mjs --upstream ${candidate} to preview generated changes. No project files were changed.`);

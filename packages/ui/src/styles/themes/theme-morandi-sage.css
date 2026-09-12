@@ -1,0 +1,72 @@
+/* Theme Color — Morandi Sage (鼠尾) */
+.theme-color-morandi-sage {
+  --background: oklch(0.97 0.008 130);
+  --foreground: oklch(0.2 0.012 130);
+  --card: oklch(0.97 0.008 130);
+  --card-foreground: oklch(0.2 0.012 130);
+  --popover: oklch(0.97 0.008 130);
+  --popover-foreground: oklch(0.2 0.012 130);
+  --primary: oklch(0.42 0.06 140);
+  --primary-foreground: oklch(0.97 0.005 130);
+  --secondary: oklch(0.92 0.015 135);
+  --secondary-foreground: oklch(0.3 0.02 135);
+  --muted: oklch(0.945 0.01 135);
+  --muted-foreground: oklch(0.55 0.02 135);
+  --accent: oklch(0.9 0.018 135);
+  --accent-foreground: oklch(0.25 0.02 135);
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: oklch(0.88 0.012 135);
+  --input: oklch(0.88 0.012 135);
+  --ring: oklch(0.6 0.04 140);
+  --chart-1: oklch(0.65 0.06 140);
+  --chart-2: oklch(0.5 0.04 140);
+  --chart-3: oklch(0.75 0.04 130);
+  --chart-4: oklch(0.4 0.05 130);
+  --chart-5: oklch(0.85 0.03 120);
+  --radius: 0.625rem;
+  --sidebar: oklch(0.985 0.006 130);
+  --sidebar-foreground: oklch(0.2 0.012 130);
+  --sidebar-primary: oklch(0.45 0.055 140);
+  --sidebar-primary-foreground: oklch(0.97 0.005 130);
+  --sidebar-accent: oklch(0.9 0.018 135);
+  --sidebar-accent-foreground: oklch(0.25 0.02 135);
+  --sidebar-border: oklch(0.88 0.012 135);
+  --sidebar-ring: oklch(0.6 0.04 140);
+}
+.theme-color-morandi-sage.dark,
+.dark.theme-color-morandi-sage,
+.theme-color-morandi-sage .dark,
+.dark .theme-color-morandi-sage {
+  --background: oklch(0.18 0.01 135);
+  --foreground: oklch(0.92 0.008 130);
+  --card: oklch(0.18 0.01 135);
+  --card-foreground: oklch(0.92 0.008 130);
+  --popover: oklch(0.18 0.01 135);
+  --popover-foreground: oklch(0.92 0.008 130);
+  --primary: oklch(0.55 0.06 140);
+  --primary-foreground: oklch(0.15 0.008 130);
+  --secondary: oklch(0.28 0.018 135);
+  --secondary-foreground: oklch(0.88 0.01 130);
+  --muted: oklch(0.23 0.015 135);
+  --muted-foreground: oklch(0.65 0.02 135);
+  --accent: oklch(0.26 0.018 135);
+  --accent-foreground: oklch(0.88 0.01 130);
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: oklch(0.3 0.015 135);
+  --input: oklch(0.3 0.015 135);
+  --ring: oklch(0.5 0.05 140);
+  --chart-1: oklch(0.6 0.06 140);
+  --chart-2: oklch(0.7 0.04 130);
+  --chart-3: oklch(0.5 0.05 140);
+  --chart-4: oklch(0.45 0.04 135);
+  --chart-5: oklch(0.75 0.03 120);
+  --radius: 0.625rem;
+  --sidebar: oklch(0.16 0.01 135);
+  --sidebar-foreground: oklch(0.92 0.008 130);
+  --sidebar-primary: oklch(0.55 0.06 140);
+  --sidebar-primary-foreground: oklch(0.15 0.008 130);
+  --sidebar-accent: oklch(0.24 0.018 135);
+  --sidebar-accent-foreground: oklch(0.88 0.01 130);
+  --sidebar-border: oklch(0.28 0.015 135);
+  --sidebar-ring: oklch(0.5 0.05 140);
+}

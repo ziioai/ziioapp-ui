@@ -1,0 +1,20 @@
+name: Validate package
+on:
+  pull_request:
+  push:
+    branches: [main, master, feat/ui-monorepo]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .node-version
+      - run: npm install --global pnpm@11.23.0
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm upstream:check
+      - run: pnpm pack:ui

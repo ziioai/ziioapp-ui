@@ -1,0 +1,24 @@
+{
+  "$schema": "https://ui.shadcn.com/schema.json",
+  "style": "base-mira",
+  "rsc": false,
+  "tsx": true,
+  "tailwind": {
+    "config": "",
+    "css": "src/styles/shadcn.css",
+    "baseColor": "zinc",
+    "cssVariables": true,
+    "prefix": ""
+  },
+  "iconLibrary": "lucide",
+  "rtl": true,
+  "menuColor": "default",
+  "menuAccent": "bold",
+  "aliases": {
+    "components": "@ziioapp/ui/components",
+    "utils": "@ziioapp/ui/lib/utils",
+    "ui": "@ziioapp/ui/components",
+    "lib": "@ziioapp/ui/lib",
+    "hooks": "@ziioapp/ui/hooks"
+  }
+}

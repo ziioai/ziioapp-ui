@@ -1,0 +1,870 @@
+[
+  {
+    "name": "accordion",
+    "classification": "upstream",
+    "source": "apps/v4/registry/bases/base/ui/accordion.tsx",
+    "sourceSha256": "2322a35cef124ca359476584e209bb21bc5c4b233b4dfdffc1a2c7a7839cad4f",
+    "output": "src/shadcn/components/accordion.tsx",
+    "outputSha256": "0426a24e843e8cd26a8abc3a53eb9c16475919202d66994c92d6420b0bda8bb3",
+    "transforms": [
+      "package-imports",
+      "lucide-icons",
+      "opaque-menus",
+      "unused-react-namespace"
+    ]
+  },
+  {
+    "name": "alert-dialog",
+    "classification": "upstream",
+    "source": "apps/v4/registry/bases/base/ui/alert-dialog.tsx",
+    "sourceSha256": "86a20c2cae7d8a686dded2ca61b84f8c0bb4c9e56cd5f423eddac87827469caf",
+    "output": "src/shadcn/components/alert-dialog.tsx",
+    "outputSha256": "f56f1eef5255c4825de07246553a169de44be9cc519ca7528f4a423469c5eeb1",
+    "transforms": [
+      "package-imports",
+      "lucide-icons",
+      "opaque-menus",
+      "unused-react-namespace"
+    ]
+  },
+  {
+    "name": "alert",
+    "classification": "upstream",
+    "source": "apps/v4/registry/bases/base/ui/alert.tsx",
+    "sourceSha256": "639c846b57885d8af4dbdf7ddab7b15fd4d392c051f7496c67e811154e7861d9",
+    "output": "src/shadcn/components/alert.tsx",
+    "outputSha256": "da8e9748f5302f572b11930450a48c79eb86353e2b2f8c90219b4d0a0f64930c",
+    "transforms": [
+      "package-imports",
+      "lucide-icons",
+      "opaque-menus",
+      "unused-react-namespace"
+    ]
+  },
+  {
+    "name": "aspect-ratio",
+    "classification": "upstream",
+    "source": "apps/v4/registry/bases/base/ui/aspect-ratio.tsx",
+    "sourceSha256": "6df19df6b983c450361081b695dbf3541a6fe4a9d2ec148766991e4eb0bf6473",
+    "output": "src/shadcn/components/aspect-ratio.tsx",
+    "outputSha256": "50c1514ef3d24fdecd9b428411151b55d7ebd077780dc04562299ee98685c26a",
+    "transforms": [
+      "package-imports",
+      "lucide-icons",
+      "opaque-menus",
+      "unused-react-namespace"
+    ]
+  },
+  {
+    "name": "attachment",
+    "classification": "upstream",
+    "source": "apps/v4/registry/bases/base/ui/attachment.tsx",
+    "sourceSha256": "8990c8ba1b1737acdbaf847aae6360ae544700beac7f3f53e559a57b04a48bfe",
+    "output": "src/shadcn/components/attachment.tsx",
+    "outputSha256": "a3e4573ee847ac9d2ea88f71986468556400035312085f371122148a8ec619e5",
+    "transforms": [
+      "package-imports",
+      "lucide-icons",
+      "opaque-menus",
+      "unused-react-namespace"
+    ]
+  },
+  {
+    "name": "avatar",
+    "classification": "upstream",
+    "source": "apps/v4/registry/bases/base/ui/avatar.tsx",
+    "sourceSha256": "d9850dc6f9aaccf9f7aab3c730c3aef62b42ef8cd9404b2d7133f771e14a6cbd",
+    "output": "src/shadcn/components/avatar.tsx",
+    "outputSha256": "41c583b217515c0c1bb1c6a33758d347b84fa5f234957f0ab5a18ba228895222",
+    "transforms": [
+      "package-imports",
+      "lucide-icons",
+      "opaque-menus",
+      "unused-react-namespace"
+    ]
+  },
+  {
+    "name": "badge",
+    "classification": "upstream",
+    "source": "apps/v4/registry/bases/base/ui/badge.tsx",
+    "sourceSha256": "cad65ac68df79093dc7e9655a94cc60011a2f82b45fc42a0ad74a6e6323c4389",
+    "output": "src/shadcn/components/badge.tsx",
+    "outputSha256": "a9afafd562e7212a2d3e096fa48e14bfc135b9e728616de6edc7f78f1a901e46",
+    "transforms": [
+      "package-imports",
+      "lucide-icons",
+      "opaque-menus",
+      "unused-react-namespace"
+    ]
+  },
+  {
+    "name": "breadcrumb",
+    "classification": "upstream",
+    "source": "apps/v4/registry/bases/base/ui/breadcrumb.tsx",
+    "sourceSha256": "006bb74f110ce68ff5a0bc4846616561aada5f1df8dac042a2c8aef80d55ab73",
+    "output": "src/shadcn/components/breadcrumb.tsx",
+    "outputSha256": "7ff68be49b915a6b61dc684c168f44072521b57eaa37ce4cd1992a8178629ccd",
+    "transforms": [
+      "package-imports",
+      "lucide-icons",
+      "opaque-menus",
+      "unused-react-namespace"
+    ]
+  },
+  {
+    "name": "bubble",
+    "classification": "upstream",
+    "source": "apps/v4/registry/bases/base/ui/bubble.tsx",
+    "sourceSha256": "7b997c07146c49b4d3371272b937bc4f1b9852b3c47150de1537997de0ea85a0",
+    "output": "src/shadcn/components/bubble.tsx",
+    "outputSha256": "80649e86044e3249cecc5a72f334d15320f9cb3941cf28d6bddd10c9159decf9",
+    "transforms": [
+      "package-imports",
+      "lucide-icons",
+      "opaque-menus",
+      "unused-react-namespace"
+    ]
+  },
+  {
+    "name": "button-group",
+    "classification": "upstream",
+    "source": "apps/v4/registry/bases/base/ui/button-group.tsx",
+    "sourceSha256": "23c66d61df078fb1604fa7ba3ad8d16550adbb2243af36584bb94d62f014914f",
+    "output": "src/shadcn/components/button-group.tsx",
+    "outputSha256": "a04df5e9da942922dad7da04e474833db10aba73ad7ec40cd10c80fa2a93b2e4",
+    "transforms": [
+      "package-imports",
+      "lucide-icons",
+      "opaque-menus",
+      "unused-react-namespace"
+    ]
+  },
+  {
+    "name": "button",
+    "classification": "upstream",
+    "source": "apps/v4/registry/bases/base/ui/button.tsx",
+    "sourceSha256": "74f982d7ad7a764e3c95a519fc063a671e66ad758ea31dc89d747838e20c2487",
+    "output": "src/shadcn/components/button.tsx",
+    "outputSha256": "9e38e1b1e4c1fed80ced8c3c90b5f9c5744185efe646f79236b67ba110bbb406",
+    "transforms": [
+      "package-imports",
+      "lucide-icons",
+      "opaque-menus",
+      "unused-react-namespace"
+    ]
+  },
+  {
+    "name": "calendar",
+    "classification": "upstream",
+    "source": "apps/v4/registry/bases/base/ui/calendar.tsx",
+    "sourceSha256": "0a492edf3888b88a5505786c48165159285cfde7e6c52eb5e4c2fdc44b09ba21",
+    "output": "src/shadcn/components/calendar.tsx",
+    "outputSha256": "9cb77c685a0964d3577457cf9a8d699f98ab49a8a95840ad2ab5f6159f689cbe",
+    "transforms": [
+      "package-imports",
+      "lucide-icons",
+      "opaque-menus",
+      "unused-react-namespace"
+    ]
+  },
+  {
+    "name": "card",
+    "classification": "upstream",
+    "source": "apps/v4/registry/bases/base/ui/card.tsx",
+    "sourceSha256": "0d525c03e086b0047f7c0700850281023359cfc020eb233fdb0d74ec870ebea0",
+    "output": "src/shadcn/components/card.tsx",
+    "outputSha256": "53015896bc4b57e2f26e208378092dac24918a217c1308a5c691dfb5f840ae77",
+    "transforms": [
+      "package-imports",
+      "lucide-icons",
+      "opaque-menus",
+      "unused-react-namespace"
+    ]
+  },
+  {
+    "name": "carousel",
+    "classification": "upstream",
+    "source": "apps/v4/registry/bases/base/ui/carousel.tsx",
+    "sourceSha256": "d2c33f0ae6b64f5d6ba8d6ad467322008008621fff6b09e9f6d8e21011849123",
+    "output": "src/shadcn/components/carousel.tsx",
+    "outputSha256": "eeaf47d734ec5fcc30d6b8d4cf9bab6d35f986e6045313454f60895dd17c3a52",
+    "transforms": [
+      "package-imports",
+      "lucide-icons",
+      "opaque-menus",
+      "unused-react-namespace"
+    ]
+  },
+  {
+    "name": "chart",
+    "classification": "upstream",
+    "source": "apps/v4/registry/bases/base/ui/chart.tsx",
+    "sourceSha256": "cdaa7c2e82aaf7b233c4764cf506cd9912aa1a49d5a02d4fd2f9a8c134687877",
+    "output": "src/shadcn/components/chart.tsx",
+    "outputSha256": "098ef83a2c33ccb8e59f775c4091988b7c5db96a961f939734b6170d1e0ca8be",
+    "transforms": [
+      "package-imports",
+      "lucide-icons",
+      "opaque-menus",
+      "unused-react-namespace"
+    ]
+  },
+  {
+    "name": "checkbox",
+    "classification": "upstream",
+    "source": "apps/v4/registry/bases/base/ui/checkbox.tsx",
+    "sourceSha256": "67d7935d6fd74b026cd464acd0c4f60dd8519667364b4ca2c584c0c486c72f3a",
+    "output": "src/shadcn/components/checkbox.tsx",
+    "outputSha256": "53d4f094ff0147cac7441dfd360b011edbee88ca63315c52a6a7e1a8d972c21c",
+    "transforms": [
+      "package-imports",
+      "lucide-icons",
+      "opaque-menus",
+      "unused-react-namespace"
+    ]
+  },
+  {
+    "name": "collapsible",
+    "classification": "upstream",
+    "source": "apps/v4/registry/bases/base/ui/collapsible.tsx",
+    "sourceSha256": "ead4349ff7b01d696ef89294a81d18ee1d3f732321398896462c834ab9b9e065",
+    "output": "src/shadcn/components/collapsible.tsx",
+    "outputSha256": "691f3de5c898c515199a84522277ddd5f2bdc4701479952b2b619b23045728d1",
+    "transforms": [
+      "package-imports",
+      "lucide-icons",
+      "opaque-menus",
+      "unused-react-namespace"
+    ]
+  },
+  {
+    "name": "combobox",
+    "classification": "upstream",
+    "source": "apps/v4/registry/bases/base/ui/combobox.tsx",
+    "sourceSha256": "214523dfe45facff2d8ddf4e07fe048a963278431bea997387fd5d21466e19fc",
+    "output": "src/shadcn/components/combobox.tsx",
+    "outputSha256": "0debdf8ad21b9b5a46f1a7a78d63d5b00ab492f8c098b127994b580e5a09248b",
+    "transforms": [
+      "package-imports",
+      "lucide-icons",
+      "opaque-menus",
+      "unused-react-namespace"
+    ]
+  },
+  {
+    "name": "command",
+    "classification": "upstream",
+    "source": "apps/v4/registry/bases/base/ui/command.tsx",
+    "sourceSha256": "65c077360299bf07e26db0954e1f2472f0ecc4568e881b4b956634fa65ca6c80",
+    "output": "src/shadcn/components/command.tsx",
+    "outputSha256": "ae94b9a3b9abc6a8a7135d1de4224822504a39c896a8e2a88c9b46532a57996b",
+    "transforms": [
+      "package-imports",
+      "lucide-icons",
+      "opaque-menus",
+      "unused-react-namespace"
+    ]
+  },
+  {
+    "name": "context-menu",
+    "classification": "upstream",
+    "source": "apps/v4/registry/bases/base/ui/context-menu.tsx",
+    "sourceSha256": "e4359306eb2242681388aa1b3a541de49dce46c375db1593f8d3362f6bb023ca",
+    "output": "src/shadcn/components/context-menu.tsx",
+    "outputSha256": "2410e936c238ad31d71dbcdef297be0521f67372819f19ee56adec88f5ba1404",
+    "transforms": [
+      "package-imports",
+      "lucide-icons",
+      "opaque-menus",
+      "unused-react-namespace"
+    ]
+  },
+  {
+    "name": "dialog",
+    "classification": "upstream",
+    "source": "apps/v4/registry/bases/base/ui/dialog.tsx",
+    "sourceSha256": "aba6df6cbf51a1edcc22e415a3a46a666fc8cb66729e47b3ed2ecd97f166adff",
+    "output": "src/shadcn/components/dialog.tsx",
+    "outputSha256": "e0a10aac09478e8e1e850fae78ee830b1c1a45dc9c04047be13f0cc333d7dc0b",
+    "transforms": [
+      "package-imports",
+      "lucide-icons",
+      "opaque-menus",
+      "unused-react-namespace"
+    ]
+  },
+  {
+    "name": "direction",
+    "classification": "upstream",
+    "source": "apps/v4/registry/bases/base/ui/direction.tsx",
+    "sourceSha256": "661ff5b9c0dc26edde1226bfedc0ab50976d84f8bae42ca83a38dc3b478fd4d4",
+    "output": "src/shadcn/components/direction.tsx",
+    "outputSha256": "7a2cbaed51f4206c8af8f23c34f0c9d952816af6e3160a0a9abd21baa6851a85",
+    "transforms": [
+      "package-imports",
+      "lucide-icons",
+      "opaque-menus",
+      "unused-react-namespace"
+    ]
+  },
+  {
+    "name": "drawer",
+    "classification": "upstream",
+    "source": "apps/v4/registry/bases/base/ui/drawer.tsx",
+    "sourceSha256": "7180299dff3cc1659ab75130f0521ba485e18b38625b904e1da4049f23479060",
+    "output": "src/shadcn/components/drawer.tsx",
+    "outputSha256": "b052352893c59601afcffcda8fd53a22b0a678a65000f57e5cc136e56387cb68",
+    "transforms": [
+      "package-imports",
+      "lucide-icons",
+      "opaque-menus",
+      "unused-react-namespace"
+    ]
+  },
+  {
+    "name": "dropdown-menu",
+    "classification": "upstream",
+    "source": "apps/v4/registry/bases/base/ui/dropdown-menu.tsx",
+    "sourceSha256": "18c1829679694a9b9850afcabf1158a80ec3624fb5e03d0d4b13339b729e0503",
+    "output": "src/shadcn/components/dropdown-menu.tsx",
+    "outputSha256": "3efc3b0257851103494de4c33d649ddaa759eb07f660fdab438177d0bc320fe0",
+    "transforms": [
+      "package-imports",
+      "lucide-icons",
+      "opaque-menus",
+      "unused-react-namespace"
+    ]
+  },
+  {
+    "name": "empty",
+    "classification": "upstream",
+    "source": "apps/v4/registry/bases/base/ui/empty.tsx",
+    "sourceSha256": "05c419160ac0226973f6f00d7d8865dc46645a75ea0697138992cdbc736efec4",
+    "output": "src/shadcn/components/empty.tsx",
+    "outputSha256": "e6ea471d1464ac312786f8df1e69f49af626ed7d675e8870c5e71f5e6576e92a",
+    "transforms": [
+      "package-imports",
+      "lucide-icons",
+      "opaque-menus",
+      "unused-react-namespace"
+    ]
+  },
+  {
+    "name": "field",
+    "classification": "upstream",
+    "source": "apps/v4/registry/bases/base/ui/field.tsx",
+    "sourceSha256": "e7305c507a3f777b0193045fdd5ebfb1c58020d3d8e0821cb9e8d19b203576b9",
+    "output": "src/shadcn/components/field.tsx",
+    "outputSha256": "ccfda23e8c2eab57ba5aa8d073481803d69adc2140221c79b9f2c13bb6e77b2c",
+    "transforms": [
+      "package-imports",
+      "lucide-icons",
+      "opaque-menus",
+      "unused-react-namespace"
+    ]
+  },
+  {
+    "name": "hover-card",
+    "classification": "upstream",
+    "source": "apps/v4/registry/bases/base/ui/hover-card.tsx",
+    "sourceSha256": "9c1412f06a968da1a5f7fd6d30d0f615445ac8e48b04fcc40bd70c8dfdfc7cb5",
+    "output": "src/shadcn/components/hover-card.tsx",
+    "outputSha256": "51c62a2d522086c075c44f881555c1bed78de39ed257a05497c477b19a2729a1",
+    "transforms": [
+      "package-imports",
+      "lucide-icons",
+      "opaque-menus",
+      "unused-react-namespace"
+    ]
+  },
+  {
+    "name": "input-group",
+    "classification": "upstream",
+    "source": "apps/v4/registry/bases/base/ui/input-group.tsx",
+    "sourceSha256": "b1ed344e05b4161c240fff21b6e224fcc61cbe35d5a3aaa997de02c8fb25e1fe",
+    "output": "src/shadcn/components/input-group.tsx",
+    "outputSha256": "0b7d43082d64f4719a23b5575644e5920cdbdb9c106dcd6efe5d1281c2e671ab",
+    "transforms": [
+      "package-imports",
+      "lucide-icons",
+      "opaque-menus",
+      "unused-react-namespace"
+    ]
+  },
+  {
+    "name": "input-otp",
+    "classification": "upstream",
+    "source": "apps/v4/registry/bases/base/ui/input-otp.tsx",
+    "sourceSha256": "8f540b9de861859602b3fbfffa5af76045877498aad5401aa4d1e8d94e1f8922",
+    "output": "src/shadcn/components/input-otp.tsx",
+    "outputSha256": "d32582e29a6d36d52cc936092951524916605cfece228a863ab4c49a0f062f41",
+    "transforms": [
+      "package-imports",
+      "lucide-icons",
+      "opaque-menus",
+      "unused-react-namespace"
+    ]
+  },
+  {
+    "name": "input",
+    "classification": "upstream",
+    "source": "apps/v4/registry/bases/base/ui/input.tsx",
+    "sourceSha256": "00213ec177e4556e69b6680128c18023d859a8e4eaf4106fbcf6abdc4f2c419b",
+    "output": "src/shadcn/components/input.tsx",
+    "outputSha256": "7fc9dbdc2e683751c7ba7b0aa986333dd6a3e1f5ce95f1a4f6782fe5fb69146f",
+    "transforms": [
+      "package-imports",
+      "lucide-icons",
+      "opaque-menus",
+      "unused-react-namespace"
+    ]
+  },
+  {
+    "name": "item",
+    "classification": "upstream",
+    "source": "apps/v4/registry/bases/base/ui/item.tsx",
+    "sourceSha256": "dcc8a3fbb7d58d32413b31b51d5ec636b9573c5ad3ebe258a3b4a03ec23670cc",
+    "output": "src/shadcn/components/item.tsx",
+    "outputSha256": "99097af1b3d0d46890e4ee4df727c75a52d5816cd5d783afd826fc796fc64403",
+    "transforms": [
+      "package-imports",
+      "lucide-icons",
+      "opaque-menus",
+      "unused-react-namespace"
+    ]
+  },
+  {
+    "name": "kbd",
+    "classification": "upstream",
+    "source": "apps/v4/registry/bases/base/ui/kbd.tsx",
+    "sourceSha256": "f04fe8ce9c10023fa4d9907030ec5e26a4c714e5377e6b3864cb03548bd0a56f",
+    "output": "src/shadcn/components/kbd.tsx",
+    "outputSha256": "f0cc4456874009e771efa2b062d27f20431168c5d6e85b32b1bac8555b2c2820",
+    "transforms": [
+      "package-imports",
+      "lucide-icons",
+      "opaque-menus",
+      "unused-react-namespace"
+    ]
+  },
+  {
+    "name": "label",
+    "classification": "upstream",
+    "source": "apps/v4/registry/bases/base/ui/label.tsx",
+    "sourceSha256": "d11f6ddea1304473d829329f36238c164dbee9fe04c038fd169d70d352b75704",
+    "output": "src/shadcn/components/label.tsx",
+    "outputSha256": "9e87e60354072f3ba51e0a82dd7979224bb47508080de1a9a4e7801c40fd3bde",
+    "transforms": [
+      "package-imports",
+      "lucide-icons",
+      "opaque-menus",
+      "unused-react-namespace"
+    ]
+  },
+  {
+    "name": "marker",
+    "classification": "upstream",
+    "source": "apps/v4/registry/bases/base/ui/marker.tsx",
+    "sourceSha256": "f7daf3c6f9ae5eee31820cd9576d6df3d30b7f348beb9fe4372704812e76384e",
+    "output": "src/shadcn/components/marker.tsx",
+    "outputSha256": "95802d8c9ae4b13be17d40cf4f44bc1afdf6767a8760915e8c24d44d7d1d7134",
+    "transforms": [
+      "package-imports",
+      "lucide-icons",
+      "opaque-menus",
+      "unused-react-namespace"
+    ]
+  },
+  {
+    "name": "menubar",
+    "classification": "upstream",
+    "source": "apps/v4/registry/bases/base/ui/menubar.tsx",
+    "sourceSha256": "0abe1b7b30525404044f1bf693e2a31f624260aec61a6d19271ac1c21f9cc26d",
+    "output": "src/shadcn/components/menubar.tsx",
+    "outputSha256": "c2553729c5168c442e5b1ce871f8d570713b8fb03443b28ced94673306cacb07",
+    "transforms": [
+      "package-imports",
+      "lucide-icons",
+      "opaque-menus",
+      "unused-react-namespace"
+    ]
+  },
+  {
+    "name": "message-scroller",
+    "classification": "upstream",
+    "source": "apps/v4/registry/bases/base/ui/message-scroller.tsx",
+    "sourceSha256": "385d9b66036e6fcf4b21997914791121c55749223d4f28f95d72862c4bd724c0",
+    "output": "src/shadcn/components/message-scroller.tsx",
+    "outputSha256": "3d84d01c76b8941cf507db8e95a98824eaa1bb561753c6d534a9b2d70dc50b7b",
+    "transforms": [
+      "package-imports",
+      "lucide-icons",
+      "opaque-menus",
+      "unused-react-namespace"
+    ]
+  },
+  {
+    "name": "message",
+    "classification": "upstream",
+    "source": "apps/v4/registry/bases/base/ui/message.tsx",
+    "sourceSha256": "b57f3c9921ceb0695cb8164c7be8ce229519f2b485b95923bb980a5e39e11c72",
+    "output": "src/shadcn/components/message.tsx",
+    "outputSha256": "087d61c8fbc908d86f8c16a6b0a7ccf0f3ccd941a1c4a6937b89f087ed8fafa0",
+    "transforms": [
+      "package-imports",
+      "lucide-icons",
+      "opaque-menus",
+      "unused-react-namespace"
+    ]
+  },
+  {
+    "name": "native-select",
+    "classification": "upstream",
+    "source": "apps/v4/registry/bases/base/ui/native-select.tsx",
+    "sourceSha256": "a96068a0bf403eac169f8b1e605f314dd268dde7ee2841ed72ff2b41cd944875",
+    "output": "src/shadcn/components/native-select.tsx",
+    "outputSha256": "87705f0bf75f9641d7aaf195c37fb557e5570de7a9ee32c28ee615cf5c96c7f0",
+    "transforms": [
+      "package-imports",
+      "lucide-icons",
+      "opaque-menus",
+      "unused-react-namespace"
+    ]
+  },
+  {
+    "name": "navigation-menu",
+    "classification": "upstream",
+    "source": "apps/v4/registry/bases/base/ui/navigation-menu.tsx",
+    "sourceSha256": "37074909a349319adc1f90ab122c46730103b5bf752915de27fb10ab25b90f65",
+    "output": "src/shadcn/components/navigation-menu.tsx",
+    "outputSha256": "b90e19a17033ca8ac73f8df665a349b58f3b53df0fa67a888f87978939cdda3e",
+    "transforms": [
+      "package-imports",
+      "lucide-icons",
+      "opaque-menus",
+      "unused-react-namespace"
+    ]
+  },
+  {
+    "name": "pagination",
+    "classification": "upstream",
+    "source": "apps/v4/registry/bases/base/ui/pagination.tsx",
+    "sourceSha256": "71bc2c0a87e62898ddb261af9b9f66959dbd806dd231704c4b54c7452fc725c7",
+    "output": "src/shadcn/components/pagination.tsx",
+    "outputSha256": "0377fe61c150347a94d617fae9115872c9a7f8316170ebd994aaa9c32f111ce3",
+    "transforms": [
+      "package-imports",
+      "lucide-icons",
+      "opaque-menus",
+      "unused-react-namespace"
+    ]
+  },
+  {
+    "name": "popover",
+    "classification": "upstream",
+    "source": "apps/v4/registry/bases/base/ui/popover.tsx",
+    "sourceSha256": "935bab728b60fd867384ebc6097d6a46c937423e015503e0251999b686f38bb7",
+    "output": "src/shadcn/components/popover.tsx",
+    "outputSha256": "bb25120887e6db683229f815a040e7274e9e870d718ca7447d3bd494d5a0db7e",
+    "transforms": [
+      "package-imports",
+      "lucide-icons",
+      "opaque-menus",
+      "unused-react-namespace"
+    ]
+  },
+  {
+    "name": "progress",
+    "classification": "upstream",
+    "source": "apps/v4/registry/bases/base/ui/progress.tsx",
+    "sourceSha256": "00afc4c7f319f5f5e78c5e294250abc656e2f7e2839821b9e086555fbd91cd76",
+    "output": "src/shadcn/components/progress.tsx",
+    "outputSha256": "95493e299508aba18c27123018cee4fa4373d839d4fc927f9ada015f15f1fca7",
+    "transforms": [
+      "package-imports",
+      "lucide-icons",
+      "opaque-menus",
+      "unused-react-namespace"
+    ]
+  },
+  {
+    "name": "questionnaire",
+    "classification": "upstream",
+    "source": "apps/v4/registry/bases/base/ui/questionnaire.tsx",
+    "sourceSha256": "8db2dcd740e76717774c62f0bd834f5f260c737c2c5d4f003364a9414cedd94d",
+    "output": "src/shadcn/components/questionnaire.tsx",
+    "outputSha256": "21a10b3b059954e55a1e57142f6471d278fe60e4a47a05e002dd8944e23dd67f",
+    "transforms": [
+      "package-imports",
+      "lucide-icons",
+      "opaque-menus",
+      "unused-react-namespace"
+    ]
+  },
+  {
+    "name": "radio-group",
+    "classification": "upstream",
+    "source": "apps/v4/registry/bases/base/ui/radio-group.tsx",
+    "sourceSha256": "c27fecb49f924d324d8c3d1354434508be0b59f202878d9713b8c1af1ebf5afa",
+    "output": "src/shadcn/components/radio-group.tsx",
+    "outputSha256": "8992177ee2b91d4fe9f3b12b2f1a1445ba111039d7b295f8822147bf4ef93ab9",
+    "transforms": [
+      "package-imports",
+      "lucide-icons",
+      "opaque-menus",
+      "unused-react-namespace"
+    ]
+  },
+  {
+    "name": "resizable",
+    "classification": "upstream",
+    "source": "apps/v4/registry/bases/base/ui/resizable.tsx",
+    "sourceSha256": "7971b48619d5e322ca95e29b2a2ff72eacb95b730d1fcbdead94511dae056e83",
+    "output": "src/shadcn/components/resizable.tsx",
+    "outputSha256": "b21a589c893ba1b3a8f38adb42233f3fa2c670b8075a0fc4cbe6bf971a4f80ef",
+    "transforms": [
+      "package-imports",
+      "lucide-icons",
+      "opaque-menus",
+      "unused-react-namespace"
+    ]
+  },
+  {
+    "name": "scroll-area",
+    "classification": "upstream",
+    "source": "apps/v4/registry/bases/base/ui/scroll-area.tsx",
+    "sourceSha256": "7e49845827447091a6493473779a05ba45cb8302e3703a6f9e4225dd6315cce2",
+    "output": "src/shadcn/components/scroll-area.tsx",
+    "outputSha256": "b5c50f382cde4026787745bb3023f33a36224ae349280cf3f5c4338c3802e181",
+    "transforms": [
+      "package-imports",
+      "lucide-icons",
+      "opaque-menus",
+      "unused-react-namespace"
+    ]
+  },
+  {
+    "name": "select",
+    "classification": "upstream",
+    "source": "apps/v4/registry/bases/base/ui/select.tsx",
+    "sourceSha256": "6348d30035b68867d5efffe9b0b1611718226bef9fdeef9554349d6b98252110",
+    "output": "src/shadcn/components/select.tsx",
+    "outputSha256": "a95c288f47fb53e26a427431d612e465db9d0769327349cc6dc2ff957beca736",
+    "transforms": [
+      "package-imports",
+      "lucide-icons",
+      "opaque-menus",
+      "unused-react-namespace"
+    ]
+  },
+  {
+    "name": "separator",
+    "classification": "upstream",
+    "source": "apps/v4/registry/bases/base/ui/separator.tsx",
+    "sourceSha256": "9a80ff8c110e0c55489509f4f82ebcc929c0174b59544047147b7134f86a54e7",
+    "output": "src/shadcn/components/separator.tsx",
+    "outputSha256": "070fa3da418fd0496f9af3e6288662323a2f9fb782d2097fdd2872b1f4030fba",
+    "transforms": [
+      "package-imports",
+      "lucide-icons",
+      "opaque-menus",
+      "unused-react-namespace"
+    ]
+  },
+  {
+    "name": "sheet",
+    "classification": "upstream",
+    "source": "apps/v4/registry/bases/base/ui/sheet.tsx",
+    "sourceSha256": "5816119da5f3468b0b91d2c65bcf6befe1d769b7867e236b9f18db83908581cb",
+    "output": "src/shadcn/components/sheet.tsx",
+    "outputSha256": "8b11da66ae39bef8b1db6f2f9328739384cc21781685824d2cad25cf34548803",
+    "transforms": [
+      "package-imports",
+      "lucide-icons",
+      "opaque-menus",
+      "unused-react-namespace"
+    ]
+  },
+  {
+    "name": "sidebar",
+    "classification": "upstream",
+    "source": "apps/v4/registry/bases/base/ui/sidebar.tsx",
+    "sourceSha256": "f0f4c21b8fa1b4750711711ac7a6833c713cf93a23f1d2143cf5ec26f1661d56",
+    "output": "src/shadcn/components/sidebar.tsx",
+    "outputSha256": "200eeedeae900c44164555d35a84b55e50bd012287d6a835d15d7ed82e705833",
+    "transforms": [
+      "package-imports",
+      "lucide-icons",
+      "opaque-menus",
+      "unused-react-namespace"
+    ]
+  },
+  {
+    "name": "skeleton",
+    "classification": "upstream",
+    "source": "apps/v4/registry/bases/base/ui/skeleton.tsx",
+    "sourceSha256": "8fcbad84e494a75484a0975221fb40f54c4a7d68f79cfc305cb158d1feb1badf",
+    "output": "src/shadcn/components/skeleton.tsx",
+    "outputSha256": "29c2b2d8b36bbea253b243bf5680c8efa0e3d8cb69af33a11c4aa131b115536f",
+    "transforms": [
+      "package-imports",
+      "lucide-icons",
+      "opaque-menus",
+      "unused-react-namespace"
+    ]
+  },
+  {
+    "name": "slider",
+    "classification": "upstream",
+    "source": "apps/v4/registry/bases/base/ui/slider.tsx",
+    "sourceSha256": "0255828e9c4477580d1428ae633f322434d2d652939272720d6980736465d712",
+    "output": "src/shadcn/components/slider.tsx",
+    "outputSha256": "d8403c9577082cdb6ad1c366691953b868576762689ca46a9e8f7111b0f361e7",
+    "transforms": [
+      "package-imports",
+      "lucide-icons",
+      "opaque-menus",
+      "unused-react-namespace"
+    ]
+  },
+  {
+    "name": "sonner",
+    "classification": "upstream",
+    "source": "apps/v4/registry/bases/base/ui/sonner.tsx",
+    "sourceSha256": "d5178ce4c7834d3f46d261698395b498b8f45fef29975585df7e26cb43aa3cc7",
+    "output": "src/shadcn/components/sonner.tsx",
+    "outputSha256": "a6a97eee8b7dcf5bf7ae15cc9c7ea6e744953cdd4683d85da4bd4f0837aaf244",
+    "transforms": [
+      "package-imports",
+      "lucide-icons",
+      "opaque-menus",
+      "unused-react-namespace"
+    ]
+  },
+  {
+    "name": "spinner",
+    "classification": "upstream",
+    "source": "apps/v4/registry/bases/base/ui/spinner.tsx",
+    "sourceSha256": "494f71fd2733709d0e43be44e3353d9df215b370137af0195251cbdfdcc9e17b",
+    "output": "src/shadcn/components/spinner.tsx",
+    "outputSha256": "1b83e03f5383d0ffd117217ec7a8761e30b6fdcb6c118b7f5525f9db4ddb8a43",
+    "transforms": [
+      "package-imports",
+      "lucide-icons",
+      "opaque-menus",
+      "unused-react-namespace"
+    ]
+  },
+  {
+    "name": "switch",
+    "classification": "upstream",
+    "source": "apps/v4/registry/bases/base/ui/switch.tsx",
+    "sourceSha256": "87aaf20b3209fabbcf0a9520c8b34733ddf2c91524c80ec72ed3dd3684f1bca3",
+    "output": "src/shadcn/components/switch.tsx",
+    "outputSha256": "66a7032a813a087eea7523518a0cc12b5cb6ffce4336ef1c6cb5d81f31ba573e",
+    "transforms": [
+      "package-imports",
+      "lucide-icons",
+      "opaque-menus",
+      "unused-react-namespace"
+    ]
+  },
+  {
+    "name": "table",
+    "classification": "upstream",
+    "source": "apps/v4/registry/bases/base/ui/table.tsx",
+    "sourceSha256": "77d15e11fcf1fb2f5e1b814aa64868e7644bb59c5e1498ecb93bcbdca1c7a070",
+    "output": "src/shadcn/components/table.tsx",
+    "outputSha256": "206c70acb1c566983dbc0ff1135c0c7551907c4893370fa8383bba23a0965c36",
+    "transforms": [
+      "package-imports",
+      "lucide-icons",
+      "opaque-menus",
+      "unused-react-namespace"
+    ]
+  },
+  {
+    "name": "tabs",
+    "classification": "upstream",
+    "source": "apps/v4/registry/bases/base/ui/tabs.tsx",
+    "sourceSha256": "1eda25325a7aae9184224247d837b94f98f162d4f697740cc2b1bd53bd35cec6",
+    "output": "src/shadcn/components/tabs.tsx",
+    "outputSha256": "e95eceb3e5e207de8b177d73995e652f924357dbe68cc399dc018d7f94cc80c2",
+    "transforms": [
+      "package-imports",
+      "lucide-icons",
+      "opaque-menus",
+      "unused-react-namespace"
+    ]
+  },
+  {
+    "name": "textarea",
+    "classification": "upstream",
+    "source": "apps/v4/registry/bases/base/ui/textarea.tsx",
+    "sourceSha256": "8f527c89dec40a9b372376dc93d2ebb149bfd82f209856d110ead1aabec19c6a",
+    "output": "src/shadcn/components/textarea.tsx",
+    "outputSha256": "57112b7b95591d081c9f73cece22481d642c4430dd32c6248eff5b6231cabdb7",
+    "transforms": [
+      "package-imports",
+      "lucide-icons",
+      "opaque-menus",
+      "unused-react-namespace"
+    ]
+  },
+  {
+    "name": "toast",
+    "classification": "upstream",
+    "source": "apps/v4/registry/bases/base/ui/toast.tsx",
+    "sourceSha256": "7109c9718288d39c49fe62e5a55a19a63a56ab60e950619df64d30d63564c0b9",
+    "output": "src/shadcn/components/toast.tsx",
+    "outputSha256": "b471596db7b10d07f67569376fc506cdf33555f1916ae489fd45b6c2e6a62ce4",
+    "transforms": [
+      "package-imports",
+      "lucide-icons",
+      "opaque-menus",
+      "unused-react-namespace"
+    ]
+  },
+  {
+    "name": "toggle-group",
+    "classification": "upstream",
+    "source": "apps/v4/registry/bases/base/ui/toggle-group.tsx",
+    "sourceSha256": "2562e00c69ad2ad15e4ce9fdbcf4c9cc42223b7ce7340db0ad3d203f23177c21",
+    "output": "src/shadcn/components/toggle-group.tsx",
+    "outputSha256": "f08a9cb92aa981056481a6b7a3b6df2ebd660e59a6c89af22eba66de741ab65d",
+    "transforms": [
+      "package-imports",
+      "lucide-icons",
+      "opaque-menus",
+      "unused-react-namespace"
+    ]
+  },
+  {
+    "name": "toggle",
+    "classification": "upstream",
+    "source": "apps/v4/registry/bases/base/ui/toggle.tsx",
+    "sourceSha256": "b53df3a8d6ad7ae3853a5e72f8bbf11e39daababfc8b0e369347b355eb9af120",
+    "output": "src/shadcn/components/toggle.tsx",
+    "outputSha256": "060642a92a97ec2a576c3e9c08a84910674864da8bf106f4a33e6830db2ab73e",
+    "transforms": [
+      "package-imports",
+      "lucide-icons",
+      "opaque-menus",
+      "unused-react-namespace"
+    ]
+  },
+  {
+    "name": "tooltip",
+    "classification": "upstream",
+    "source": "apps/v4/registry/bases/base/ui/tooltip.tsx",
+    "sourceSha256": "dc5ec917d8276af9d66e7c951b0608d67c149bcb311072166bc8ce67ee2b7488",
+    "output": "src/shadcn/components/tooltip.tsx",
+    "outputSha256": "567ce814736df28dc4968585a7ad87c677ba8f110f263ff667c11b0bb05152a3",
+    "transforms": [
+      "package-imports",
+      "lucide-icons",
+      "opaque-menus",
+      "unused-react-namespace"
+    ]
+  }
+]

@@ -1,0 +1,117 @@
+{
+  "name": "@ziioapp/ui",
+  "version": "0.1.0",
+  "type": "module",
+  "exports": {
+    "./components/*": "./src/shadcn/components/*.tsx",
+    "./hooks/*": "./src/hooks/*.ts",
+    "./lib/*": "./src/lib/*.ts",
+    "./styles/*": "./src/styles/*",
+    "./styles.css": "./src/styles/shadcn.css",
+    "./hooks/use-mobile": "./src/shadcn/hooks/use-mobile.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "upstream:check": "node scripts/sync-upstream.mjs",
+    "upstream:apply": "node scripts/sync-upstream.mjs --write",
+    "build": "node scripts/build-package.mjs && node scripts/build-registry.mjs && node scripts/check-package.mjs",
+    "registry:build": "node scripts/build-registry.mjs",
+    "package:check": "node scripts/check-package.mjs",
+    "prepack": "pnpm run typecheck && pnpm run build"
+  },
+  "dependencies": {
+    "@base-ui/react": "1.8.0",
+    "@shadcn/react": "0.3.1",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "cmdk": "^1.1.1",
+    "embla-carousel-react": "^8.6.0",
+    "input-otp": "^1.4.2",
+    "lucide-react": "^1.16.0",
+    "next-themes": "^0.4.6",
+    "react-day-picker": "^10.0.1",
+    "react-resizable-panels": "^4.11.1",
+    "recharts": "3.8.0",
+    "sonner": "^2.0.7",
+    "tailwind-merge": "^3.6.0",
+    "tw-animate-css": "^1.4.0"
+  },
+  "devDependencies": {
+    "@types/react": "catalog:toolchain",
+    "@types/react-dom": "catalog:toolchain",
+    "typescript": "catalog:toolchain",
+    "vite": "catalog:toolchain",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "tailwindcss": "4.3.0",
+    "@tailwindcss/node": "4.3.0",
+    "@tailwindcss/oxide": "4.3.0"
+  },
+  "description": "Base UI components with all official shadcn runtime styles and palettes",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ziioai/ziioapp-ui.git",
+    "directory": "packages/ui"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "upstream/lock.json",
+    "upstream/components.json",
+    "THIRD_PARTY_NOTICES.md"
+  ],
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "peerDependencies": {
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "tailwindcss": "^4.3.0"
+  },
+  "peerDependenciesMeta": {
+    "tailwindcss": {
+      "optional": true
+    }
+  },
+  "publishConfig": {
+    "access": "public",
+    "exports": {
+      "./components/*": {
+        "types": "./dist/shadcn/components/*.d.ts",
+        "import": "./dist/shadcn/components/*.js"
+      },
+      "./hooks/use-mobile": {
+        "types": "./dist/shadcn/hooks/use-mobile.d.ts",
+        "import": "./dist/shadcn/hooks/use-mobile.js"
+      },
+      "./hooks/*": {
+        "types": "./dist/hooks/*.d.ts",
+        "import": "./dist/hooks/*.js"
+      },
+      "./lib/*": {
+        "types": "./dist/lib/*.d.ts",
+        "import": "./dist/lib/*.js"
+      },
+      "./styles/*": "./dist/styles/*",
+      "./styles.css": "./dist/styles.css",
+      "./base.css": "./dist/base.css",
+      "./package.json": "./package.json"
+    },
+    "registry": "https://registry.npmjs.org/"
+  },
+  "author": "ziioai",
+  "homepage": "https://github.com/ziioai/ziioapp-ui#readme",
+  "bugs": {
+    "url": "https://github.com/ziioai/ziioapp-ui/issues"
+  },
+  "keywords": [
+    "react",
+    "base-ui",
+    "shadcn",
+    "components",
+    "tailwindcss",
+    "themes"
+  ]
+}

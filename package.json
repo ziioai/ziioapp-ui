@@ -1,0 +1,26 @@
+{
+  "name": "ziioapp-ui-monorepo",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "author": "ziioai",
+  "license": "MIT",
+  "packageManager": "pnpm@11.23.0",
+  "engines": {
+    "node": ">=24.19.0 <25",
+    "pnpm": "11.23.0"
+  },
+  "volta": {
+    "node": "24.19.0"
+  },
+  "scripts": {
+    "dev": "pnpm -r --if-present dev",
+    "build": "pnpm -r --if-present build",
+    "typecheck": "pnpm -r --if-present typecheck",
+    "test": "pnpm -r --if-present test",
+    "lint": "biome check .",
+    "format": "biome format --write .",
+    "upstream:check": "pnpm -r --if-present upstream:check",
+    "pack:ui": "pnpm --filter @ziioapp/ui pack --pack-destination ./artifacts"
+  }
+}

@@ -1,0 +1,52 @@
+@import "./shadcn.css";
+@import "./theme-base.css";
+
+@layer base {
+  html {
+    color-scheme: light dark;
+    background-color: #666;
+    color: #eee;
+  }
+  html.dark {
+    background-color: #222;
+  }
+  * {
+    transition:
+      margin 0.25s,
+      padding 0.25s,
+      border-radius 0.25s,
+      background-color 0.25s,
+      color 0.25s,
+      border-color 0.25s,
+      box-shadow 0.25s;
+  }
+  /* button,
+  [data-slot=button],
+  .button {
+    cursor: pointer;
+  } */
+}
+
+@import "./bases/base-neutral.css";
+@import "./bases/base-stone.css";
+@import "./bases/base-zinc.css";
+@import "./bases/base-mauve.css";
+@import "./bases/base-olive.css";
+@import "./bases/base-mist.css";
+@import "./bases/base-taupe.css";
+
+@import "./themes/theme-blue.css";
+@import "./themes/theme-indigo.css";
+@import "./themes/theme-rose.css";
+@import "./themes/theme-morandi-sage.css";
+@import "./themes/theme-morandi-dust.css";
+@import "./themes/theme-morandi-fog.css";
+@import "./themes/theme-atmosphere-sakura.css";
+@import "./themes/theme-atmosphere-coffee.css";
+@import "./themes/theme-atmosphere-halloween.css";
+@import "./themes/theme-atmosphere-literary.css";
+
+@import "./charts/chart-amber.css";
+@import "./charts/chart-blue.css";
+@import "./charts/chart-rose.css";
+@import "./charts/chart-teal.css";

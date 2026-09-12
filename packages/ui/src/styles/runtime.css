@@ -1,0 +1,6 @@
+/* Shared authored-source markers used by the official preview. */
+@layer base {
+  .cn-font-heading { @apply font-heading; }
+  .cn-rtl-flip:dir(rtl) { rotate: 180deg; }
+  body.style-lyra, body.style-sera { --radius: 0; }
+}
