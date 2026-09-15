@@ -1,6 +1,6 @@
 {
   "name": "@ziioapp/vite-plugin-theme",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Vite plugin for explicit ZiioApp theme composition and runtime manifests",
   "type": "module",
   "exports": {
@@ -22,7 +22,7 @@
   },
   "peerDependencies": {
     "@fontsource-variable/inter": "^5.2.8",
-    "@ziioapp/framework": "^0.1.0",
+    "@ziioapp/framework": "^0.1.0 || ^0.2.0",
     "@ziioapp/ui": "^0.2.0",
     "vite": "^7.0.0"
   },

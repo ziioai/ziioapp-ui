@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.2.1 — 2026-09-15
+
+- 将 `@ziioapp/ui/lib/feedback` 的内部实现从 Sonner 切换为 Base UI Toast，并保留现有 `notify` 调用入口。
+- 更新主题插件的 Framework peer 范围，使其兼容 `@ziioapp/framework@0.2.0`。
+
 ## 0.2.0 — 2026-09-15
 
 - 新增统一瞬时反馈入口 `@ziioapp/ui/lib/feedback`，将 Sonner 保持为 UI 包内部实现。
