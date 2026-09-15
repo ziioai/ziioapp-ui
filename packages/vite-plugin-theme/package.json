@@ -1,0 +1,62 @@
+{
+  "name": "@ziioapp/vite-plugin-theme",
+  "version": "0.1.0",
+  "description": "Vite plugin for explicit ZiioApp theme composition and runtime manifests",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "build": "node scripts/build-package.mjs",
+    "prepack": "pnpm run typecheck && pnpm run build"
+  },
+  "devDependencies": {
+    "@fontsource-variable/inter": "^5.2.8",
+    "@types/node": "^24.0.0",
+    "@ziioapp/framework": "workspace:^",
+    "@ziioapp/ui": "workspace:^",
+    "typescript": "catalog:toolchain",
+    "vite": "catalog:toolchain"
+  },
+  "peerDependencies": {
+    "@fontsource-variable/inter": "^5.2.8",
+    "@ziioapp/framework": "^0.1.0",
+    "@ziioapp/ui": "^0.2.0",
+    "vite": "^7.0.0"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "exports": {
+      ".": {
+        "types": "./dist/index.d.ts",
+        "import": "./dist/index.js"
+      },
+      "./package.json": "./package.json"
+    },
+    "registry": "https://registry.npmjs.org/"
+  },
+  "license": "MIT",
+  "author": "ziioai",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ziioai/ziioapp-ui.git",
+    "directory": "packages/vite-plugin-theme"
+  },
+  "homepage": "https://github.com/ziioai/ziioapp-ui#readme",
+  "bugs": {
+    "url": "https://github.com/ziioai/ziioapp-ui/issues"
+  },
+  "keywords": [
+    "vite",
+    "plugin",
+    "theme",
+    "ziioapp"
+  ]
+}

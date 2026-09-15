@@ -1,0 +1,18 @@
+.app-loading {
+  position: fixed;
+  inset: 0 0 0 0;
+  z-index: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--background);
+}
+
+.app-loading-text {
+  font-size: 0.875rem;
+  color: var(--foreground);
+}
+
+.electron.app-loading {
+  background-color: var(--background);
+}

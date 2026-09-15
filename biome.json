@@ -9,7 +9,8 @@
       "!!packages/ui/upstream",
       "!!packages/ui/src/shadcn",
       "!!packages/ui/src/components",
-      "!!packages/ui/src/styles"
+      "!!packages/ui/src/styles",
+      "!!packages/framework/src/styles/source.css"
     ]
   },
   "formatter": {
