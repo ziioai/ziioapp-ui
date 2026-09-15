@@ -75,6 +75,18 @@ importers:
         specifier: catalog:toolchain
         version: 7.3.6(@types/node@24.13.4)(jiti@2.7.0)(lightningcss@1.32.0)
 
+  packages/theme-atmosphere:
+    devDependencies:
+      typescript:
+        specifier: catalog:toolchain
+        version: 6.0.3
+
+  packages/theme-morandi:
+    devDependencies:
+      typescript:
+        specifier: catalog:toolchain
+        version: 6.0.3
+
   packages/ui:
     dependencies:
       '@base-ui/react':

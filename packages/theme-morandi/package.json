@@ -1,0 +1,56 @@
+{
+  "name": "@ziioapp/theme-morandi",
+  "version": "0.1.0",
+  "description": "Muted Morandi semantic color themes for ZiioApp",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./styles/*": "./src/styles/*",
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "build": "node scripts/build-package.mjs",
+    "prepack": "pnpm run typecheck && pnpm run build"
+  },
+  "devDependencies": {
+    "typescript": "catalog:toolchain"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "exports": {
+      ".": {
+        "types": "./dist/index.d.ts",
+        "import": "./dist/index.js"
+      },
+      "./styles/*": "./dist/styles/*",
+      "./package.json": "./package.json"
+    },
+    "registry": "https://registry.npmjs.org/"
+  },
+  "license": "MIT",
+  "author": "ziioai",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ziioai/ziioapp-ui.git",
+    "directory": "packages/theme-morandi"
+  },
+  "homepage": "https://github.com/ziioai/ziioapp-ui#readme",
+  "bugs": {
+    "url": "https://github.com/ziioai/ziioapp-ui/issues"
+  },
+  "keywords": [
+    "theme",
+    "morandi",
+    "shadcn",
+    "ziioapp"
+  ]
+}

@@ -23,6 +23,8 @@
     "upstream:check": "pnpm -r --if-present upstream:check",
     "pack:ui": "pnpm --filter @ziioapp/ui pack --pack-destination ./artifacts",
     "pack:framework": "pnpm --filter @ziioapp/framework pack --pack-destination ./artifacts",
-    "pack:vite-plugin-theme": "pnpm --filter @ziioapp/vite-plugin-theme pack --pack-destination ./artifacts"
+    "pack:vite-plugin-theme": "pnpm --filter @ziioapp/vite-plugin-theme pack --pack-destination ./artifacts",
+    "pack:theme-morandi": "pnpm --filter @ziioapp/theme-morandi pack --pack-destination ./artifacts",
+    "pack:theme-atmosphere": "pnpm --filter @ziioapp/theme-atmosphere pack --pack-destination ./artifacts"
   }
 }
