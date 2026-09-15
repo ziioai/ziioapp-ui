@@ -1,32 +1,6 @@
 @import "./shadcn.css";
 @import "./theme-base.css";
 
-@layer base {
-  html {
-    color-scheme: light dark;
-    background-color: #666;
-    color: #eee;
-  }
-  html.dark {
-    background-color: #222;
-  }
-  * {
-    transition:
-      margin 0.25s,
-      padding 0.25s,
-      border-radius 0.25s,
-      background-color 0.25s,
-      color 0.25s,
-      border-color 0.25s,
-      box-shadow 0.25s;
-  }
-  /* button,
-  [data-slot=button],
-  .button {
-    cursor: pointer;
-  } */
-}
-
 @import "./bases/base-neutral.css";
 @import "./bases/base-stone.css";
 @import "./bases/base-zinc.css";

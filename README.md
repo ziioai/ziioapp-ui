@@ -89,6 +89,7 @@ import { Button } from "@ziioapp/ui/components/button";
 import { Input } from "@ziioapp/ui/components/input";
 import { Card, CardContent } from "@ziioapp/ui/components/card";
 import { cn } from "@ziioapp/ui/lib/utils";
+import { notify } from "@ziioapp/ui/lib/feedback";
 ```
 
 Components use **Base UI** APIs. For custom triggers, use the component's `render` API where supported. Date Picker, Data Table, and Typography are compositions rather than separate generic component exports.

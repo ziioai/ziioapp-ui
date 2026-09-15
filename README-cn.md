@@ -89,6 +89,7 @@ import { Button } from "@ziioapp/ui/components/button";
 import { Input } from "@ziioapp/ui/components/input";
 import { Card, CardContent } from "@ziioapp/ui/components/card";
 import { cn } from "@ziioapp/ui/lib/utils";
+import { notify } from "@ziioapp/ui/lib/feedback";
 ```
 
 组件使用 **Base UI** API，自定义触发器时使用组件支持的 `render` API。Date Picker、Data Table 和 Typography 属于组合方案，不提供独立的通用组件导出。
