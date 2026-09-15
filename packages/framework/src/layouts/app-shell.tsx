@@ -19,10 +19,7 @@ import {
 import { useEffect, useMemo, useState } from "react";
 import { MyFramedBox } from "../basic/my-framed-box";
 import type { ZiioAppConfig } from "../config/types";
-import {
-  FeedbackViewport,
-  type FeedbackViewportProps,
-} from "../elements/feedback-viewport";
+import { FeedbackViewport } from "../elements/feedback-viewport";
 import { Titlebar } from "../elements/titlebar";
 import { isElectron } from "../platform/runtime";
 import type { ThemeProviderProps } from "../providers/theme-provider";
@@ -48,8 +45,6 @@ interface AppShellFrameBaseProps<
   surface?: AppShellSurface;
   /** 关闭当前壳层的反馈挂载点，供更高层统一挂载时使用。 */
   renderToaster?: boolean;
-  /** 通知出现的位置，省略时使用反馈组件默认值。 */
-  toasterPosition?: FeedbackViewportProps["position"];
 }
 
 export type AppShellFrameProps<TConfig extends ZiioAppConfig = ZiioAppConfig> =
@@ -77,7 +72,6 @@ export function AppShell<TConfig extends ZiioAppConfig>({
   header,
   surface,
   renderToaster,
-  toasterPosition,
   defaultUiStyle,
   availableUiStyles,
   defaultBaseColor,
@@ -93,7 +87,7 @@ export function AppShell<TConfig extends ZiioAppConfig>({
 }: AppShellProps<TConfig>) {
   const hydrated = useHydrated();
 
-  const frameProps = { config, surface, renderToaster, toasterPosition };
+  const frameProps = { config, surface, renderToaster };
   const frame =
     mode === "custom" ? (
       <AppShellFrame {...frameProps} mode="custom" header={header}>
@@ -159,7 +153,6 @@ export function AppShellFrame<TConfig extends ZiioAppConfig>({
   header,
   surface,
   renderToaster = true,
-  toasterPosition,
 }: AppShellFrameProps<TConfig>) {
   const effectiveSurface = surface ?? (mode === "standard" ? "framed" : "flat");
   const flatSurface = effectiveSurface === "flat";
@@ -219,7 +212,7 @@ export function AppShellFrame<TConfig extends ZiioAppConfig>({
         ) : null}
         {devtools}
       </div>
-      {renderToaster ? <FeedbackViewport position={toasterPosition} /> : null}
+      {renderToaster ? <FeedbackViewport /> : null}
     </>
   );
 }

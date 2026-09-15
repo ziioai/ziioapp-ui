@@ -1,10 +1,7 @@
 import { useHydrated } from "@tanstack/react-router";
 import { BasicTitledPageConfigProvider } from "../basic/basic-titled-page";
 import { MyFramedBox } from "../basic/my-framed-box";
-import {
-  FeedbackViewport,
-  type FeedbackViewportProps,
-} from "../elements/feedback-viewport";
+import { FeedbackViewport } from "../elements/feedback-viewport";
 import { Titlebar } from "../elements/titlebar";
 import { isElectron } from "../platform/runtime";
 import {
@@ -17,13 +14,11 @@ import { AppLoadingView } from "../views/app-loading-view";
 export type AloneWindowShellProps = Omit<ThemeProviderProps, "children"> & {
   children: React.ReactNode;
   renderToaster?: boolean;
-  toasterPosition?: FeedbackViewportProps["position"];
 };
 
 export function AloneWindowShell({
   children,
   renderToaster = true,
-  toasterPosition,
   ...themeProps
 }: AloneWindowShellProps) {
   const hydrated = useHydrated();
@@ -40,7 +35,7 @@ export function AloneWindowShell({
           <MyFramedBox className="sm:px-2 sm:pb-2">{children}</MyFramedBox>
         </BasicTitledPageConfigProvider>
       </div>
-      {renderToaster ? <FeedbackViewport position={toasterPosition} /> : null}
+      {renderToaster ? <FeedbackViewport /> : null}
     </ThemeProvider>
   ) : (
     <AppLoadingView

@@ -1,14 +1,8 @@
-import { Toaster } from "@ziioapp/ui/components/sonner";
+import { Toaster } from "@ziioapp/ui/components/toast";
 
-import { useTheme } from "../providers/theme-provider";
-
-export type FeedbackViewportProps = Omit<
-  React.ComponentProps<typeof Toaster>,
-  "theme"
->;
+export type FeedbackViewportProps = React.ComponentProps<typeof Toaster>;
 
 /** The single application-level mount point for transient feedback. */
 export function FeedbackViewport(props: FeedbackViewportProps) {
-  const { resolvedTheme } = useTheme();
-  return <Toaster theme={resolvedTheme} {...props} />;
+  return <Toaster {...props} />;
 }
