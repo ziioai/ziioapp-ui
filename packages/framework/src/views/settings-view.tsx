@@ -230,27 +230,27 @@ export function SettingsView() {
             <FieldLegend>偏好</FieldLegend>
             <FieldDescription>管理应用的运行偏好</FieldDescription>
             <FieldGroup>
-              <Field orientation="responsive">
+              <Field orientation="horizontal">
+                <FieldContent>
+                  <FieldLabel htmlFor={notificationsId}>推送通知</FieldLabel>
+                  <FieldDescription>允许应用发送推送通知</FieldDescription>
+                </FieldContent>
                 <Switch
                   id={notificationsId}
                   checked={notifications}
                   onCheckedChange={setNotifications}
                 />
-                <FieldContent>
-                  <FieldLabel htmlFor={notificationsId}>推送通知</FieldLabel>
-                  <FieldDescription>允许应用发送推送通知</FieldDescription>
-                </FieldContent>
               </Field>
-              <Field orientation="responsive">
+              <Field orientation="horizontal">
+                <FieldContent>
+                  <FieldLabel htmlFor={autoSaveId}>自动保存</FieldLabel>
+                  <FieldDescription>编辑时自动保存更改</FieldDescription>
+                </FieldContent>
                 <Switch
                   id={autoSaveId}
                   checked={autoSave}
                   onCheckedChange={setAutoSave}
                 />
-                <FieldContent>
-                  <FieldLabel htmlFor={autoSaveId}>自动保存</FieldLabel>
-                  <FieldDescription>编辑时自动保存更改</FieldDescription>
-                </FieldContent>
               </Field>
             </FieldGroup>
           </FieldSet>

@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.2 — 2026-09-18
+
+- 将 Framework 设置页的偏好开关改为官方横向 Field 组合，避免窄容器下 Switch 被拉伸为整行宽度；`@ziioapp/framework` 升级至 `0.2.1`。
+
 ## 0.2.1 — 2026-09-15
 
 - 将 `@ziioapp/ui/lib/feedback` 的内部实现从 Sonner 切换为 Base UI Toast，并保留现有 `notify` 调用入口。
