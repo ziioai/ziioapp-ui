@@ -60,6 +60,5 @@ export {
 } from "./providers/theme-script";
 export { cn } from "./utils/cn";
 export { AboutView } from "./views/about-view";
-export type { AppLoadingViewProps } from "./views/app-loading-view";
 export { AppLoadingView } from "./views/app-loading-view";
 export { SettingsView } from "./views/settings-view";

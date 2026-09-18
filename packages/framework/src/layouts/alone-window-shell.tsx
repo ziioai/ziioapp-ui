@@ -38,13 +38,7 @@ export function AloneWindowShell({
       {renderToaster ? <FeedbackViewport /> : null}
     </ThemeProvider>
   ) : (
-    <AppLoadingView
-      initialTheme={{
-        defaultTheme: "system",
-        storageKey: "theme",
-        ...themeProps,
-      }}
-    />
+    <AppLoadingView />
   );
 
   return content;

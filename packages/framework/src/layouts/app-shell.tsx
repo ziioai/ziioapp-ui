@@ -123,24 +123,7 @@ export function AppShell<TConfig extends ZiioAppConfig>({
       {frame}
     </ThemeProvider>
   ) : (
-    <AppLoadingView
-      initialTheme={{
-        storageKey: "theme",
-        defaultTheme: "system",
-        defaultUiStyle,
-        defaultBaseColor,
-        defaultThemeColor,
-        defaultChartColor,
-        baseColorOverride,
-        themeColorOverride,
-        chartColorOverride,
-        uiStyleOverride,
-        availableBaseColors,
-        availableThemeColors,
-        availableChartColors,
-        availableUiStyles,
-      }}
-    />
+    <AppLoadingView />
   );
 
   return content;

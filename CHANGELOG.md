@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.3.0 — 2026-09-18
+
+- 将 Web 主题初始化脚本从 `AppLoadingView` 迁移到消费端文档 `<head>`，消除重复脚本和 `<html>` hydration mismatch；Framework 升级至 `0.3.0`。
+- `AppLoadingView` 恢复为纯加载视图，不再接受 `initialTheme`；消费端必须在根文档挂载 `ThemeScript` 并为 `<html>` 设置 `suppressHydrationWarning`。
+- `@ziioapp/vite-plugin-theme` 升级至 `0.1.2`，扩展 Framework peer 范围至 `^0.3.0`。
+
 ## 0.2.2 — 2026-09-18
 
 - 将 Framework 设置页的偏好开关改为官方横向 Field 组合，避免窄容器下 Switch 被拉伸为整行宽度；`@ziioapp/framework` 升级至 `0.2.1`。
