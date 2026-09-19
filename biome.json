@@ -9,6 +9,7 @@
       "!!packages/ui/upstream",
       "!!packages/ui/src/shadcn",
       "!!packages/ui/src/components",
+      "!!packages/ui/src/lib/official-themes.ts",
       "!!packages/ui/src/styles",
       "!!packages/framework/src/styles/source.css"
     ]

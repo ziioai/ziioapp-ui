@@ -8,6 +8,11 @@
     "outDir": "dist",
     "rootDir": "src"
   },
-  "include": ["src/shadcn/**/*.ts", "src/shadcn/**/*.tsx", "src/lib/**/*.ts", "src/hooks/**/*.ts"],
+  "include": [
+    "src/shadcn/**/*.ts",
+    "src/shadcn/**/*.tsx",
+    "src/lib/**/*.ts",
+    "src/hooks/**/*.ts"
+  ],
   "exclude": ["src/components"]
 }
