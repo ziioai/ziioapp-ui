@@ -1,0 +1,15 @@
+@import "yet-another-react-lightbox/styles.css" layer(components);
+
+.wac-image-viewer {
+  --yarl__color_backdrop: var(--background);
+  --yarl__color_button: var(--foreground);
+  color: var(--foreground);
+}
+.wac-image-viewer .yarl__toolbar {
+  left: 0;
+  align-items: center;
+  gap: 8px;
+  padding: max(12px, env(safe-area-inset-top))
+    max(12px, env(safe-area-inset-right)) 12px
+    max(12px, env(safe-area-inset-left));
+}

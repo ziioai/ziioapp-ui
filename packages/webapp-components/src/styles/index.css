@@ -1,0 +1,77 @@
+/* Register package utilities with the consuming Tailwind v4 build. No reset or theme. */
+@source "../components";
+@source "../blocks";
+
+@layer components {
+  .wac-mobile-page {
+    --mobile-page-width: 768px;
+    --floating-bar-height: 50px;
+    --floating-bar-bottom: calc(16px + env(safe-area-inset-bottom));
+    --floating-bar-clearance: calc(
+      var(--floating-bar-height) +
+      var(--floating-bar-bottom) +
+      16px
+    );
+    position: relative;
+    max-width: var(--mobile-page-width);
+    min-height: 100dvh;
+    margin-inline: auto;
+    background: var(--background);
+  }
+  .wac-page-content {
+    padding-inline: 20px;
+  }
+  .wac-page-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-height: 76px;
+    padding: 16px 20px;
+  }
+  .wac-floating-bar {
+    position: fixed;
+    z-index: 30;
+    bottom: var(
+      --floating-bar-bottom,
+      calc(16px + env(safe-area-inset-bottom))
+    );
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(calc(100% - 32px), var(--floating-bar-width, 440px));
+  }
+  .wac-mobile-viewport {
+    position: fixed;
+    top: var(--viewport-top, 0px);
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: var(--mobile-page-width, 768px);
+    height: var(--viewport-height, 100dvh);
+    overflow: hidden;
+    background: var(--background);
+  }
+  .wac-masonry {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(var(--masonry-columns, 2), minmax(0, 1fr));
+    align-items: start;
+    gap: var(--masonry-gap, 12px);
+  }
+  .wac-masonry > [data-slot="masonry-item"] {
+    min-width: 0;
+  }
+  .wac-masonry[data-ready="true"] {
+    display: block;
+  }
+  .wac-masonry[data-ready="true"] > [data-slot="masonry-item"] {
+    position: absolute;
+  }
+  @media (min-width: 640px) {
+    .wac-page-content,
+    .wac-page-header {
+      padding-inline: 32px;
+    }
+  }
+}
