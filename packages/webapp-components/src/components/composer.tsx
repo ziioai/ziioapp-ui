@@ -8,7 +8,7 @@ import {
 } from "@ziioapp/ui/components/input-group";
 import { Spinner } from "@ziioapp/ui/components/spinner";
 import { cn } from "@ziioapp/ui/lib/utils";
-import { ArrowUp } from "lucide-react";
+import { ArrowUp, Square } from "lucide-react";
 import type { ComponentProps } from "react";
 
 export function Composer(props: ComponentProps<typeof InputGroup>) {
@@ -17,23 +17,33 @@ export function Composer(props: ComponentProps<typeof InputGroup>) {
 
 export function ComposerInput({
   onSubmitShortcut,
+  submitShortcut = "mod-enter",
   onKeyDown,
   className,
   ...props
 }: ComponentProps<typeof InputGroupTextarea> & {
   onSubmitShortcut?: () => void;
+  submitShortcut?: "mod-enter" | "enter" | "none";
 }) {
   return (
     <InputGroupTextarea
-      className={cn("max-h-32", className)}
+      className={cn(
+        "min-h-0 max-h-32 field-sizing-content scroll-fade-y scroll-fade-4 overflow-y-auto",
+        className,
+      )}
       {...props}
       onKeyDown={(event) => {
         onKeyDown?.(event);
         if (
           !event.defaultPrevented &&
           !event.nativeEvent.isComposing &&
+          event.keyCode !== 229 &&
           event.key === "Enter" &&
-          (event.ctrlKey || event.metaKey) &&
+          !event.shiftKey &&
+          !event.altKey &&
+          (submitShortcut === "mod-enter"
+            ? event.ctrlKey || event.metaKey
+            : submitShortcut === "enter" && !event.ctrlKey && !event.metaKey) &&
           onSubmitShortcut
         ) {
           event.preventDefault();
@@ -79,6 +89,25 @@ export function ComposerSubmit({
       ) : (
         (children ?? <ArrowUp data-icon="inline-start" />)
       )}
+    </InputGroupButton>
+  );
+}
+
+export function ComposerStop({
+  children,
+  className,
+  ...props
+}: ComponentProps<typeof InputGroupButton>) {
+  return (
+    <InputGroupButton
+      type="button"
+      variant="secondary"
+      size="icon-sm"
+      aria-label="停止生成"
+      className={cn("ml-auto", className)}
+      {...props}
+    >
+      {children ?? <Square />}
     </InputGroupButton>
   );
 }

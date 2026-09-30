@@ -1,6 +1,6 @@
 {
   "name": "@ziioapp/webapp-components",
-  "version": "0.1.0",
+  "version": "0.1.1-local.1",
   "type": "module",
   "description": "Composable mobile web application components built on @ziioapp/ui",
   "license": "MIT",
@@ -36,7 +36,8 @@
     "./styles.css": "./src/styles/index.css",
     "./styles/source.css": "./src/styles/index.css",
     "./styles/image-viewer.css": "./src/styles/image-viewer.css",
-    "./package.json": "./package.json"
+    "./package.json": "./package.json",
+    "./hooks/*": "./src/hooks/*.ts"
   },
   "scripts": {
     "typecheck": "tsc --noEmit -p tsconfig.json",
@@ -80,7 +81,11 @@
       "./styles.css": "./dist/styles/index.css",
       "./styles/source.css": "./dist/styles/index.css",
       "./styles/image-viewer.css": "./dist/styles/image-viewer.css",
-      "./package.json": "./package.json"
+      "./package.json": "./package.json",
+      "./hooks/*": {
+        "types": "./dist/hooks/*.d.ts",
+        "import": "./dist/hooks/*.js"
+      }
     },
     "registry": "https://registry.npmjs.org/"
   }

@@ -75,3 +75,34 @@
     }
   }
 }
+
+/* One continuous opacity curve across the whole surface, with no solid/fade
+   junction. alpha = 1 - smootherstep(t³): retain clarity protection near the
+   controls, then ease smoothly to transparent with zero slope at both ends.
+   Gradient stops approximate the curve; they do not add blur layers. */
+[data-slot="search-header-backdrop"] {
+  --search-header-mask: linear-gradient(
+    to bottom,
+    rgb(0 0 0 / 1) 0%,
+    rgb(0 0 0 / 1) 5%,
+    rgb(0 0 0 / 1) 10%,
+    rgb(0 0 0 / 1) 15%,
+    rgb(0 0 0 / 0.99999) 20%,
+    rgb(0 0 0 / 0.99996) 25%,
+    rgb(0 0 0 / 0.99981) 30%,
+    rgb(0 0 0 / 0.99926) 35%,
+    rgb(0 0 0 / 0.99762) 40%,
+    rgb(0 0 0 / 0.99343) 45%,
+    rgb(0 0 0 / 0.98395) 50%,
+    rgb(0 0 0 / 0.96467) 55%,
+    rgb(0 0 0 / 0.92905) 60%,
+    rgb(0 0 0 / 0.86883) 65%,
+    rgb(0 0 0 / 0.7756) 70%,
+    rgb(0 0 0 / 0.64412) 75%,
+    rgb(0 0 0 / 0.47751) 80%,
+    rgb(0 0 0 / 0.29333) 85%,
+    rgb(0 0 0 / 0.12689) 90%,
+    rgb(0 0 0 / 0.02316) 95%,
+    rgb(0 0 0 / 0) 100%
+  );
+}
