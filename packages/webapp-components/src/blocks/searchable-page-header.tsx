@@ -87,6 +87,7 @@ export function SearchHeaderRoot({
   );
 }
 export function SearchHeaderBackdrop({
+  children = <SearchHeaderBackdropTint />,
   className,
   ref,
   ...props
@@ -102,6 +103,25 @@ export function SearchHeaderBackdrop({
       )}
       {...props}
       ref={merged}
+    >
+      {children}
+    </FadedBackdrop>
+  );
+}
+/** Theme tint shares the measured backdrop bounds and fades toward the content. */
+export function SearchHeaderBackdropTint({
+  className,
+  ...props
+}: ComponentProps<"div">) {
+  return (
+    <div
+      data-slot="search-header-backdrop-tint"
+      aria-hidden="true"
+      className={cn(
+        "pointer-events-none absolute inset-0 bg-linear-to-b from-background/100 to-background/0",
+        className,
+      )}
+      {...props}
     />
   );
 }
