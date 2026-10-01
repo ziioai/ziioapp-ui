@@ -1,6 +1,6 @@
 {
   "name": "@ziioapp/webapp-components",
-  "version": "0.1.1-local.3",
+  "version": "0.1.1-local.5",
   "type": "module",
   "description": "Composable mobile web application components built on @ziioapp/ui",
   "license": "MIT",

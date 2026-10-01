@@ -20,7 +20,10 @@ export function BottomNavigation({
           <TabsList
             role="presentation"
             activateOnFocus={false}
-            className={cn("h-auto w-full gap-2", className)}
+            className={cn(
+              "relative h-auto w-full gap-1 bg-muted/25 backdrop-blur-[20px]",
+              className,
+            )}
           >
             {children}
           </TabsList>
@@ -46,7 +49,10 @@ export function BottomNavigationItem({
       aria-selected={undefined}
       aria-controls={undefined}
       tabIndex={0}
-      className={cn("min-h-10 flex-1 flex-col gap-1 px-2 py-1", className)}
+      className={cn(
+        "min-h-11 min-w-0 flex-1 flex-col gap-1 px-2 py-1 text-xs data-active:bg-foreground/5 data-active:border-foreground/5 data-active:text-foreground hover:bg-foreground/6 data-active:hover:bg-foreground/14 dark:data-active:bg-foreground/5 dark:data-active:border-foreground/5 dark:data-active:text-foreground dark:data-active:hover:bg-foreground/14",
+        className,
+      )}
     />
   );
 }
