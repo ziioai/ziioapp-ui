@@ -84,11 +84,7 @@ export function ComposerSubmit({
       disabled={disabled || busy}
       aria-busy={busy || undefined}
     >
-      {busy ? (
-        <Spinner data-icon="inline-start" />
-      ) : (
-        (children ?? <ArrowUp data-icon="inline-start" />)
-      )}
+      {busy ? <Spinner /> : (children ?? <ArrowUp />)}
     </InputGroupButton>
   );
 }

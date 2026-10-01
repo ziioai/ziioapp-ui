@@ -111,7 +111,7 @@ export function SettingsRowControl({
     <div
       data-slot="settings-row-control"
       className={cn(
-        "flex min-w-0 max-w-full flex-[1_1_10rem] items-center justify-end sm:w-56 sm:flex-none [&>[data-slot=toggle-group]]:justify-end group-data-[grouped=true]/settings-row:w-full group-data-[grouped=true]/settings-row:basis-full sm:group-data-[grouped=true]/settings-row:basis-auto",
+        "flex min-w-0 max-w-full flex-[1_1_10rem] items-center justify-end sm:w-56 sm:flex-none [&>[data-slot=toggle-group]]:justify-end group-data-[grouped=true]/settings-row:w-full group-data-[grouped=true]/settings-row:basis-full sm:group-data-[grouped=true]/settings-row:basis-auto sm:group-data-[grouped=true]/settings-row:w-56",
         className,
       )}
       {...props}

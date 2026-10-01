@@ -83,7 +83,7 @@ pnpm --filter @ziioapp/webapp-components build
 pnpm pack:webapp-components
 ```
 
-发布产物位于 `dist/`，`pnpm pack:webapp-components` 会生成 `artifacts/ziioapp-webapp-components-0.1.1-local.1.tgz`。包的公开 JS、类型和 CSS 路径均指向 `dist/`；源码、示例与脚本不会进入 tarball。不提供根 barrel，避免只用表单时意外加载图片浏览器或拖拽模块。不复制官方 Button、Field、Item、Avatar、Message 等基础组件。
+发布产物位于 `dist/`，`pnpm pack:webapp-components` 会生成 `artifacts/ziioapp-webapp-components-0.1.1-local.3.tgz`。包的公开 JS、类型和 CSS 路径均指向 `dist/`；源码、示例与脚本不会进入 tarball。不提供根 barrel，避免只用表单时意外加载图片浏览器或拖拽模块。不复制官方 Button、Field、Item、Avatar、Message 等基础组件。
 
 ## 0.1.1 本地迁移版
 
@@ -126,4 +126,4 @@ pnpm pack:webapp-components
 - [migration-layered.tsx](examples/migration-layered.tsx)：搜索、密钥、头像、设置、说明、标题栏、会话条目和消息输入的内部区域组合。
 - 二者参与包的 TypeScript 检查；运行时主题、业务状态与存储均由宿主提供。
 
-本地包版本为 `0.1.1-local.1`。此阶段仅构建、打包并将 tarball 放入 Continuity 的 `.local-packages`；应用依赖与本地组件替换是独立的后续步骤。
+本地包版本为 `0.1.1-local.3`。此阶段仅构建、打包并将 tarball 放入 Continuity 的 `.local-packages`；应用依赖与本地组件替换是独立的后续步骤。
